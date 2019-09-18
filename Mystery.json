@@ -1,0 +1,121 @@
+{
+    "verbs": [
+      { "v": "Basement Hatch",   "map": "Basement Hatch" },
+      { "v": "Side Window",    "map": "Side Window"  },
+      { "v": "Enter mysterious room",    "map": "Enter mysterious room" },
+      { "v": "Tell Lee to investigate the room while you investigate upstairs",   "map": "Tell Lee to investigate the room while you investigate upstairs" },
+      { "v": "Allow Lee to investigate the basement while you roam the house.",   "map": "Allow Lee to investigate the basement while you roam the house." },
+      { "v": "Insist that you be the one to investigate downstairs.", "map": "Insist that you be the one to investigate downstairs." },
+      { "v": "Take this info to partner Lee", "map": "Take this info to partner Lee" },
+      { "v": "Continue on to the second floor", "map": "Continue on to the second floor" },
+      { "v": "Approach Lee with gun drawn", "map": "Approach Lee with gun drawn" },
+      { "v": "Holster weapon and approach Lee", "map": "Holster weapon and approach Lee" }
+      
+
+
+    ],
+
+"Arrival": {
+    "START":{
+        "name": "Outdoors",
+        "desc": "You arrive on the scene of a suspected serial killer's hideout with your partner, Detective Lee.  You see two ways of entry, the side window and the back basement hatch.",
+        "exits": [
+            {
+                "verb": "Basement Hatch",
+                "target": "Basement"
+             },
+             {
+                 "verb": "Side Window",
+                 "target": "Kitchen"
+             }
+        ]
+
+    },
+    "Basement": {
+        "name": "Inside",
+        "desc": "You arrive into the basement to find a gruesome pile of bodies. This is your first time seeing a corpse, however you act like it is not.  You see a room with an ajar door revealing a white room with flashing lights",
+        "exits": [
+            {
+                "verb": "Enter mysterious room",
+                "target": "Mystery Room"
+
+            },
+            {
+                "verb": "Tell Lee to investigate the room while you investigate upstairs",
+                "target": "Bedroom"
+            }
+        ]
+    },
+    "Kitchen": {
+        "name": "Inside",
+        "desc": "You enter into the kitchen to find a gruesome array of tools and weapons that are painted with blood. Your partner Lee insists he splits to investigate the basement.",
+        "exits": [
+            {
+                "verb": "Allow Lee to investigate the basement while you roam the house.",
+                "target": "Bedroom"
+
+            },
+            {
+                "verb": "Insist that you be the one to investigate downstairs.",
+                "target": "Death"
+            }
+        ]
+    },
+    "Mystery Room": {
+        "name": "Danger",
+        "desc": "You enter the room to find pictures of victims. As you search the room you find a wall with numerous pictures of your family and yourself. You hear a creak behind you and a gun cock and then death.",
+        "exits": []
+    },
+    "Death": {
+        "name": "Danger",
+        "desc": "You spot the basement stairs. As you take your first step a push from behind sends you spiraling down the stairs to your inevitable death.",
+        "exits": []
+    },
+    "Bedroom": {
+        "name": "Clue",
+        "desc": "You search the bedroom and find many weapons and information that only a person with a certain clearance could obtain. Possibly a veteran is a suspect?",
+        "exits": [
+            {
+                "verb": "Take this info to partner Lee",
+                "target": "Realization"
+            },
+            {
+                "verb": "Continue on to the second floor",
+                "target": "Death2"
+            }
+        ]
+    },
+    
+    "Realization": {
+        "name": "Warning",
+        "desc": "You go downstairs to find Lee inside the mystery room. As you near you hear another voice saying 'Kill him' in a sinister tone. You enter gun drawn to fine Lee alone with his back facing you. The other voice is him. It is clear Lee is not mentally healthy",
+        "exits": [
+            {
+                "verb": "Approach Lee with gun drawn",
+                "target": "The End"
+            },
+            {
+                "verb": "Holster weapon and approach Lee",
+                "target": "Death3"
+            }
+
+            
+        ]
+    },
+    "Death2": {
+        "name": "Danger",
+        "desc": "You walk up the stairs to be met by a hidden pit fall trap at the top that send you hurdling into an array of spikes that impale and kill you",
+        "exits": []
+    },
+    "Death3": {
+        "name": "Danger",
+        "desc": "As you approach Lee his voices begin to chant 'kill him' and he hears you behind him. He immediately turns, pull his gun, and shoots you dead.",
+        "exits": []
+    },
+    "The End": {
+        "name": "Warning",
+        "desc": "Lee begins to erratically chant 'Kill Him!' and turns. Tears in his eyes but yet a smile ear to ear on his face he says 'I hope you've enjoyed your stay in my home'. Then reaches for his gun but you beat him to the shot and shoot him dead. Congratulations you have caught the serial killer.",
+        "exits": []
+    }
+  }
+}
