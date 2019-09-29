@@ -1,0 +1,43 @@
+Name: Joey Copeland
+Date: 9/28/2019
+Project: Text Adventure
+Peer's repository:  https://github.com/ImKingSP/03Text-adventures.git
+
+
+
+What is something you learned by reviewing your peer's project?
+
+ In reviewing Spencer King's project, I learned a few things.  One is that directional inputs can be creative, they do not need to only be North, South, East, and West.  Also, it reminded me to be sure to check my work to make sure everything runs smoothly.
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+
+ I really like the idea of the game!  If certain choices are made, the character can be sent spiralling down the stairs to his or her death.  In an interactive game such as this, it is important to let a player experience the consequences of his or her actions.
+
+What suggestions would you have for your peer to improve his/her code?
+
+ Make sure to change the name of the zork.json file so that it matches the .json file.  For example, in main.py, I changed zork.json to Mystery.json so that the game could run.  Also, there is no definition for rooms in the .json file so the game will not run.  I have tried to fix the problem but I am a very inexperienced coder so I was not successful.
+ Also, when the character dies, I would program a way for the player to be returned to the previous action, presumably the one that ended up killing the character.
+
+What could have been clearer or better commented?
+
+ For someone playing the game, the commands could be a bit simpler.  If I was able to play I am not sure that I would be able to guess one of the available commands in the different rooms.
+
+Was there anything in the code that was confusing to you? If so, what?
+
+ The only thing confusing to me was the problems concerning the .json file and the lack of a rooms definition for the game to run on.  I was very unsure of how to fix the latter of the problems, but I did manage to fix the .json problem.
+ Other than that, the code was pretty clear!
+
+Does the repository contain an appropriate LICENSE?
+
+ Yes, there is a fully completed MIT License.
+
+What is something he/she could add to the README.md to make it more descriptive?
+
+ If anything, I would just describe the background of the game a bit more.  A player might be able to better immerse his or her self if the description of the game was more thorough.
+ Also, the game could be a little more mysterious and enticing if the ending was not revealed.
+
+Pay a compliment to your peer based on the quality of his/her code.
+
+ From the code, I can tell that the game was well thought out and a clear picture was painted in Spencer's head, which I love.
+ I think one of the greatest things a game designer or coder can do before starting a project is to develop an idea of where the project is leading.
+ Also, I really like the twist that Lee turns out to be the villain, I wish I had gotten to play it.
